@@ -12,6 +12,15 @@ This is a short script to generate sankeymatic input data based on the movement 
 - Your trello key
 - Your board shortlink
 
+To start, in your browser, log in as the account you want to use aginst the Trello API
+Go to: https://trello.com/1/appKey/generate
+Copy the key here into demo.py, or just keep it handy
+
+To find your board link, navigate to the desired board in trello and copy the 8 characters after https://trello.com/b/
+
 It'll print out info in the following format, which you can just copy paste into sankeymatic:
+
 SOURCE [AMOUNT] DESTINATION
 
+Run in the command line as follows:
+python demo.py

@@ -1,17 +1,22 @@
 # Thanks to https://github.com/bmccormack/trello-python-demo/blob/master/demo.py for the inspiration
 
 import requests
-from john_settings import trello_key, trello_token, trello_boardlink
 from pprint import pprint
 import numpy as np
 
-# you can specify your trello key and token in the setting file
-key = trello_key
-token = trello_token
+# The key tells Trello which developer's code is trying to run against the API
+#
+# To start, in your browser, log in as the account you want to use aginst the Trello API
+# go to: https://trello.com/1/appKey/generate
+# copy the key here or to your settings file
 
-board_link = trello_boardlink
+key = None # Should be 32 characters
+token = None # Should be 64 characters
 
-# else you can input them here
+# To find your board link, navigate to the desired board in trello
+# and copy the 8 characters after https://trello.com/b/
+board_link = None # Should be 8 characters
+
 if key is None:
 	key = input('Please enter your trello key')
 
